@@ -2,7 +2,7 @@ require 'telegram_bot'
 
 token = '1136297398:AAEKKPU_f01jIa3ZIlvE7c1bka2a67uIPOA'
 
-bot = TelegramBot.new(token : token)
+bot = TelegramBot.new(token: token)
 
 bot.get_updates(fail_silently: true) do |message|
   puts "@#{message.from.username}: #{message.text}"
