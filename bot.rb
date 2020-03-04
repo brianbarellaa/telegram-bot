@@ -25,19 +25,4 @@ bot.get_updates(fail_silently: true) do |message|
       bot.api.send_message(chat_id: message.chat.id, text: 'Make a choice', reply_markup: markup)
     end
   end
-
-  message.reply do |reply|
-    case command
-    when /start/i
-      reply.text = "All I can do is say hello. Try the /greet command."
-    when /greet/i
-      reply.text = "Hello, #{message.from.first_name}. 🤖"
-    when /jumlah/i
-      reply.text = "Jumlah Material :, #{message.from.username}"
-    else
-      reply.text = "I have no idea what #{command.inspect} means."
-    end
-    puts "sending #{reply.text.inspect} to @#{message.from.username}"
-    reply.send_with(bot)
-  end
 end
