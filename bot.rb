@@ -6,11 +6,9 @@ token = '1136297398:AAEKKPU_f01jIa3ZIlvE7c1bka2a67uIPOA'
 
 bot = TelegramBot.new(token: token)
 
-CREATE TABLE `Assurance`.`Monitor` (`No` INT NOT NULL AUTO_INCREMENT,`Tiket` TEXT(45));
-
 @db_host  = "localhost"
 @db_user  = "root"
-@db_pass  = "whatever"
+@db_pass  = "1234567890"
 @db_name = "Assurance"
 
 client = Mysql2::Client.new(:host => @db_host , :username => @db_user, :password => @db_pass, :database =>@db_name)
