@@ -5,7 +5,7 @@ token = '1136297398:AAEKKPU_f01jIa3ZIlvE7c1bka2a67uIPOA'
 
 bot = TelegramBot.new(token: token)
 
-CREATE TABLE `Assurance`.`Monitor` (`No.` INT NOT NULL AUTO_INCREMENT, `Tiket` TEXT(45), `Layanan` TEXT(45), `Progress` TEXT(45), `Pelanggan` TEXT(45), `Teknisi` TEXT(45));
+CREATE TABLE `Assurance`.`"Monitor" + Date.now` (`No.` INT NOT NULL AUTO_INCREMENT, `Tiket` TEXT(45), `Layanan` TEXT(45), `Progress` TEXT(45), `Pelanggan` TEXT(45), `Teknisi` TEXT(45));
 
 @db_host  = "localhost"
 @db_user  = "root"
