@@ -1,6 +1,4 @@
 require 'telegram_bot'
-require 'mysql2/em'
-require 'csv' 
 
 token = '1136297398:AAEKKPU_f01jIa3ZIlvE7c1bka2a67uIPOA'
 
